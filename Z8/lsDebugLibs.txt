@@ -1,0 +1,41 @@
+     16477:	find library=libcap.so.2 [0]; searching
+     16477:	 search cache=/etc/ld.so.cache
+     16477:	  trying file=/usr/lib/libcap.so.2
+     16477:	
+     16477:	find library=libacl.so.1 [0]; searching
+     16477:	 search cache=/etc/ld.so.cache
+     16477:	  trying file=/usr/lib/libacl.so.1
+     16477:	
+     16477:	find library=libc.so.6 [0]; searching
+     16477:	 search cache=/etc/ld.so.cache
+     16477:	  trying file=/usr/lib/libc.so.6
+     16477:	
+     16477:	find library=libattr.so.1 [0]; searching
+     16477:	 search cache=/etc/ld.so.cache
+     16477:	  trying file=/usr/lib/libattr.so.1
+     16477:	
+     16477:	
+     16477:	calling init: /usr/lib/libc.so.6
+     16477:	
+     16477:	
+     16477:	calling init: /usr/lib/libattr.so.1
+     16477:	
+     16477:	
+     16477:	calling init: /usr/lib/libacl.so.1
+     16477:	
+     16477:	
+     16477:	calling init: /usr/lib/libcap.so.2
+     16477:	
+     16477:	
+     16477:	initialize program: /usr/bin/ls
+     16477:	
+     16477:	
+     16477:	transferring control: /usr/bin/ls
+     16477:	
+     16477:	find library=libnss_files.so.2 [0]; searching
+     16477:	 search cache=/etc/ld.so.cache
+     16477:	  trying file=/usr/lib/libnss_files.so.2
+     16477:	
+     16477:	
+     16477:	calling init: /usr/lib/libnss_files.so.2
+     16477:	

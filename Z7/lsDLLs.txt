@@ -1,0 +1,8 @@
+	linux-vdso.so.1 (0x00007fff6d087000)
+	libcap.so.2 => /usr/lib/libcap.so.2 (0x00007fcecea73000)
+	libacl.so.1 => /usr/lib/libacl.so.1 (0x00007fcece86a000)
+	libc.so.6 => /usr/lib/libc.so.6 (0x00007fcece4bf000)
+	libattr.so.1 => /usr/lib/libattr.so.1 (0x00007fcece2ba000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fcecec77000)
+
+na ćwiczeniach omawialiśmy wady ładowania tych samych bibliotek zawsze pod te same adresy pamięci: możnaby dość prosto odczytać ich strukturę przez odpowiednie modyfikacje ich pamięci.

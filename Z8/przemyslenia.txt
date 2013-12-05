@@ -1,0 +1,2 @@
+symbole funkcji są wiązane leniwie - na chwilę przed wywołaniem. zmienne są z kolei wiązane gorliwie (aczkolwiek możliwe że jest to wiązanie leniwem ale init ich używa).
+wersjonowanie służy upewnieniu się, że dana biblioteka zawiera porzebne funkcje: zbyt stara mogłaby ich nie zawierać, dodatkowo można utrzymywać kompatybilność wsteczną: nowsze biblioteki mogą nie zawierać starszych funkcji.

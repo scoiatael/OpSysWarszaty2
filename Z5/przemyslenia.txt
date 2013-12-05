@@ -1,0 +1,1 @@
+narzędzie to pomaga przy testowaniu aplikacji w profilowaniu: dowiadujemy się która funkcja alokuje pamięć i ile, ile może zająć nasz cały program w pamięci, ile stosu maksymalnie zajął. Dzięki temu możemy np stwierdzić, że wykonywana jest zbyt duża ilość alokacji lub są one zbyt częste. 

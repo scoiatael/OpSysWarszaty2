@@ -1,0 +1,4 @@
+/usr/lib/libfakeroot
+/usr/lib/
+/usr/lib/ffmpeg-compat/
+/usr/lib32

@@ -1,0 +1,20 @@
+from Inside ELF Symbol Tables
+By Ali Bahrami on Sep 23, 2006
+https://blogs.oracle.com/ali/entry/inside_elf_symbol_tables
+
+STT_NOTYPE
+Used when we don't know what a symbol is, or to indicate the absence of a symbol.
+STT_OBJECT / STT_COMMON
+These are both used to represent data. (The word OBJECT in this context should not interpreted as having anything to do with object orientation. STT_DATA might have been a better name.)
+STT_OBJECT is used for normal variable definitions, while STT_COMMON is used for tentative definitions. A tentative symbol is a symbol used to track a global variable when we don't know its size or initial value. In other words, a symbol for which we have not yet assigned a storage address. They are also known as "common block" symbols, because they have their origins in the implementation of Fortran COMMON blocks. They are historical baggage — something that needs to work for compatibility with the past, but also something to avoid in new code.
+STT_FUNC
+A function, or other executable code.
+STT_SECTION
+When I first started learning about ELF, and someone would say something about "section symbols", I thought they meant a symbol from some given section. That's not it though: A section symbol is a symbol that is used to refer to the section itself. They are used mainly when performing relocations, which are often specified in the form of "modify the value at offset XXX relative to the start of section YYY".
+STT_FILE
+The name of a file, either of an input file used to construct the ELF file, or of the ELF file itself.
+STT_TLS
+A third type of data symbol, used for thread local data. A thread local variable is a variable that is unique to each thread. For instance, if I declare the variable "foo" to be thread local, then every thread has a separate foo variable of their own, and they do not see or share values from the other threads. Thread local variables are created for each thread when the thread is created. As such, their number (one per thread) and addresses (depends on when the thread is created, and how many threads there are) are unknown until runtime. An ELF file cannot contain an address for them. Instead, a STT_TLS symbol is used. The value of a STT_TLS symbol is an offset, which is used to calculate a TLS offset relative to the thread pointer. You can read more about TLS in the Linker And Libraries Guide.
+STT_REGISTER
+The Sparc architecture has a concept known as a "register symbol". These symbols are used to validate symbol/register usage, and can also be used to initialize global registers. Other architectures don't use these.
+

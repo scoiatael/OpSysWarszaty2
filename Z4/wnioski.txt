@@ -1,0 +1,3 @@
+malloc dla malych wartosci alokuje jeden duzy blok pamieci i z niego wycina male kawalki,
+dla duzych alokuje kazdy blok osobno.
+wniosek: czasem cos, co wydaje sie byc kiepskie dla cache'a patrzac na kod w c, moze takie nie byc: bo male kawalki i tak zostana zaalokowane obok siebie.

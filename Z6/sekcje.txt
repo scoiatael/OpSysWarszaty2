@@ -1,0 +1,7 @@
+read_only.. -> .rodata (type PROGBITS, flags A, link 0)
+big_big.. -> .bss (type NOBITS, flags WA, link 0)
+a_var -> .data (type PROGBITS, flags WA, link 0)
+W - write, A - alloc
+(z progObjDumped.txt)
+.rodata -> segment 02
+.bss,.data -> segment 03
