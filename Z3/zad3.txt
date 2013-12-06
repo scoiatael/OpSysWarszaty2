@@ -1,0 +1,6 @@
+VmPeak - najwieksza ilosc pamieci wirtualnej, ktora byla wykorzystywana
+VmSize - ilosc pamieci wirtualnej
+
+VmRSS pokazuje ile pamieci proces ma w pamieci RAM.
+
+Wartosci VmData, VmStk i VmExe oznaczaja kolejno ilosci pamieci zajetej przez: dane, stos i kod procesu. Informacje o wielkosci tablicy stron jest okreslona przez VmPTE.

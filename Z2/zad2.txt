@@ -1,0 +1,4 @@
+swappiness
+dirty_ratio - ilosc stron, wyrazona procentowo, ktore beda czyszczone w tle, przez jadro
+dirty_background_ratio - ilosc stron, wyrazona procentowo, ktore beda czyszczone w tle, przez jadro
+overcommit_memory - flaga regulujaca przyznawania pamieci procesom na zadanie. 0 - jadro probuje przewidziec, czy moze dac zadana pamiec 1 - jadro przyznaje pamiec, tak dlogo, az jej rzeczywiscie zabraknie 2 - pamiec bedzie przydzielana tak dlugo az osignie wartosc okreslona przez overcommit_ratio + swap

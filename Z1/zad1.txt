@@ -1,0 +1,17 @@
+----- free -hm -----
+Pokazuje informacje o pamieci. W pierwszej lini widzimy calkowita ilosc pamieci, uzywana oraz te, przeznaczona na bufory i cache. W drugiej lini znajduje sie ilosc zuzytej pamieci, nieliczac buforow i cache'y oraz ile pamieci byloby wolne, gdyby nie bylo buforow i cache'y.
+
+
+----- vmstat -s -SM -----
+Informacje o pamieci wurtualnej. 
+active - pamiec wykorzystywana przez jakis proces
+inactive - pamiec zaalokowa dla procesu
+pages paged in - strony wczytane z dysku
+pages paged out - strony zczytane z dysku
+pages swapped in - strony wyswapowane na dysk
+pages swapped out -strony wyswapowane na dysk
+
+Nie wiem jak tlumaczyc swap w tym przypadku. Swapping polega na przeniesieniu caego procesu na dysk, stronicowanie, tylko czesci stron.
+
+----- /proc/meminfo -----
+W tym pliku znajdziemy szczegolowe dane dotyczace pamieci. Oprocz informacji wyswietlonych za pomoca dwoch powyzszych polecej mozna dowiedziec sie ile jest pamieci aktywnej i nieaktywnej, ktora jest wykorzystywana przez procesy jako sterta i stos(anon) oraz pamiec, w ktorej znajduja sie juz konkretne dane i pliki (file). Ilosc pamieci brudnnej, a nawet wielkosc stosu jadra, czy pamiec, ktora jest wykorzystywana do zapamietania tablic stron.
